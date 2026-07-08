@@ -2,8 +2,12 @@ name: Sync Upstream netboot.xyz Data
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs daily at midnight UTC
-  workflow_dispatch: # Allows manual triggering
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
   sync:
