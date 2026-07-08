@@ -21,11 +21,12 @@ jobs:
           mkdir -p upstream
           curl -sL "https://raw.githubusercontent.com/netbootxyz/netboot.xyz/master/endpoints.yml" -o upstream/endpoints.yml
           curl -sL "https://raw.githubusercontent.com/netbootxyz/netboot.xyz/master/user_overrides.yml" -o upstream/user_overrides.yml
-
+          
       - name: Check for Changes
         id: git-check
         run: |
-          git diff --exit-code || echo "changes=true" >> $GITHUB_OUTPUT
+          git add upstream/
+          git diff --staged --exit-code || echo "changes=true" >> $GITHUB_OUTPUT
 
       - name: Create Pull Request
         if: steps.git-check.outputs.changes == 'true'
