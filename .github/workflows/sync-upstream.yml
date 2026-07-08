@@ -1,0 +1,39 @@
+name: Sync Upstream netboot.xyz Data
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs daily at midnight UTC
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout kexecboot.xyz
+        uses: actions/checkout@v4
+
+      - name: Fetch Latest Endpoints
+        run: |
+          mkdir -p upstream
+          curl -sL "https://raw.githubusercontent.com/netbootxyz/netboot.xyz/master/endpoints.yml" -o upstream/endpoints.yml
+          curl -sL "https://raw.githubusercontent.com/netbootxyz/netboot.xyz/master/user_overrides.yml" -o upstream/user_overrides.yml
+
+      - name: Check for Changes
+        id: git-check
+        run: |
+          git diff --exit-code || echo "changes=true" >> $GITHUB_OUTPUT
+
+      - name: Create Pull Request
+        if: steps.git-check.outputs.changes == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore(upstream): sync latest endpoints from netboot.xyz"
+          title: "Automated Upstream Sync: endpoints.yml"
+          body: |
+            Automated synchronization of `endpoints.yml` and `user_overrides.yml` from the upstream netboot.xyz repository.
+            
+            Review changes to ensure no breaking structural changes to the YAML format before merging into the kexecboot parser.
+          branch: auto/upstream-sync
+          base: main
+          labels: upstream, automated
