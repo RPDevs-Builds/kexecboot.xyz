@@ -1,0 +1,89 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build-tui:
+    name: Build TUI (${{ matrix.os }})
+    strategy:
+      matrix:
+        include:
+          - os: linux
+            runner_os: linux64
+            runner_size: heavy
+            ext: ""
+          - os: darwin
+            runner_os: macOS
+            runner_size: lightweight
+            ext: ""
+          - os: windows
+            runner_os: windows
+            runner_size: lightweight
+            ext: ".exe"
+    runs-on: [self-hosted, "${{ matrix.runner_os }}", "${{ matrix.runner_size }}"]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.24.x'
+
+      - name: Build TUI
+        shell: bash
+        run: |
+          cd tui
+          go build -o kexecboot-tui-${{ matrix.os }}${{ matrix.ext }} ./cmd/kexecboot
+
+      - name: Upload TUI Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: kexecboot-tui-${{ matrix.os }}
+          path: tui/kexecboot-tui-${{ matrix.os }}${{ matrix.ext }}
+
+  build-iso:
+    name: Build Linux ISO
+    runs-on: [self-hosted, linux64, heavy]
+    needs: build-tui
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.24.x'
+
+      - name: Cache Buildroot downloads
+        uses: actions/cache@v4
+        with:
+          path: buildroot/dl
+          key: ${{ runner.os }}-buildroot-dl
+
+      - name: Download Buildroot
+        run: |
+          wget https://buildroot.org/downloads/buildroot-2023.11.1.tar.gz
+          tar -xf buildroot-2023.11.1.tar.gz
+          mv buildroot-2023.11.1 buildroot
+
+      - name: Configure Buildroot
+        run: |
+          cd buildroot
+          make BR2_EXTERNAL=../buildroot-external kexecboot_defconfig
+
+      - name: Build
+        run: |
+          cd buildroot
+          make -j$(nproc)
+
+      - name: Upload ISO Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: kexecboot-images
+          path: buildroot/output/images/
