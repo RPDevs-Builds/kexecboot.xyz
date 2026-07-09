@@ -1,0 +1,4 @@
+/buildroot/
+/tui/kexecboot-tui
+*.img
+*.iso

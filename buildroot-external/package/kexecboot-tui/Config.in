@@ -1,0 +1,7 @@
+config BR2_PACKAGE_KEXECBOOT_TUI
+	bool "kexecboot-tui"
+	depends on BR2_PACKAGE_HOST_GO_TARGET_ARCH_SUPPORTS
+	help
+	  Go TUI for Wi-Fi Native Network Bootloader
+
+	  https://github.com/RPDevs-Builds/kexecboot.xyz
