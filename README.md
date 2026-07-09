@@ -1,1 +1,80 @@
-IyBrZXhlY2Jvb3QueHl6CgohW0NJXShodHRwczovL2dpdGh1Yi5jb20vUlBEZXZzLUJ1aWxkcy9rZXhlY2Jvb3QueHl6L2FjdGlvbnMvd29ya2Zsb3dzL2NpLnltbC9iYWRnZS5zdmcpXShodHRwczovL2dpdGh1Yi5jb20vUlBEZXZzLUJ1aWxkcy9rZXhlY2Jvb3QueHl6L2FjdGlvbnMvd29ya2Zsb3dzL2NpLnltbCkKIVtWZXJzaW9uXShodHRwczovL2ltZy5zaGllbGRzLmlvL2dpdGh1Yi92L3RhZy9SUERldnMtQnVpbGRzL2tleGVjYm9vdC54eXo/bGFiZWw9dmVyc2lvbikKCkEgV2ktRmkgY2FwYWJsZSBuZXR3b3JrIGJvb3Rsb2FkZXIgdXRpbGl6aW5nIGEgbWluaW1hbCBMaW51eCBrZXhlYyBlbnZpcm9ubWVudCBhbmQgR28gVFVJLCBzeW5jaHJvbml6ZWQgd2l0aCBuZXRib290Lnh5eiBlbmRwb2ludHMuCgprZXhlY2Jvb3QueHl6IGlzIGEgYmFyZS1tZXRhbCBuZXR3b3JrIGJvb3Rsb2FkZXIgZGVzaWduZWQgdG8gYnlwYXNzIHRoZSBoYXJkd2FyZSBsaW1pdGF0aW9ucyBvZiB0cmFkaXRpb25hbCBpUFhFIGVudmlyb25tZW50cy4gQnkgdXRpbGl6aW5nIGEgbWluaW1hbCBCdWlsZHJvb3QgTGludXggaW5pdHJhbWZzIGFuZCBhIHN0YXRpY2FsbHkgY29tcGlsZWQgR28gdGVybWluYWwgdXNlciBpbnRlcmZhY2UgKFRVSSksIGtleGVjYm9vdC54eXogZW5hYmxlcyBwcmUtT1MgV2ktRmkgYXV0aGVudGljYXRpb24gKFdQQTIvV1BBMykgYW5kIHBheWxvYWQgcmV0cmlldmFsIG92ZXIgbW9kZXJuIHdpcmVsZXNzIG5ldHdvcmtzLgoKVGhlIHByb2plY3QgYXV0b21hdGljYWxseSBzeW5jaHJvbml6ZXMgd2l0aCB0aGUgdXBzdHJlYW0gZW5kcG9pbnRzLnltbCBmcm9tIG5ldGJvb3QueHl6LCBkeW5hbWljYWxseSBwYXJzaW5nIE9TIGtlcm5lbCBwYXRocyBhbmQgcGFyYW1ldGVycyB0byBleGVjdXRlIGEgZGlyZWN0IGtleGVjIHBpdm90IGludG8gdGhlIHRhcmdldCBvcGVyYXRpbmcgc3lzdGVtLgoKLS0tCgojIyBDb3JlIENhcGFiaWxpdGllcwoKLSAqKk5hdGl2ZSBXaXJlbGVzcyBCb290aW5nKio6IEF1dGhlbnRpY2F0ZXMgdG8gV1BBMi9XUEEzIG5ldHdvcmtzIHVzaW5nIGl3ZCBhbmQgbW9kZXJuIExpbnV4IGRyaXZlcnMsIGJ5cGFzc2luZyBVRUZJIFNOUCBuZXR3b3JrIGNvbnN0cmFpbnRzLgoKLSAqKkdvLURyaXZlbiBNZW51IFN5c3RlbSoqOiBSZXBsYWNlcyBsZWdhY3kgaVBYRSBzY3JpcHRzIHdpdGggYSBzdGF0aWNhbGx5IGNvbXBpbGVkIEdvIFRVSSBmb3IgZHluYW1pYyBPUyBzZWxlY3Rpb24gYW5kIHBhcmFtZXRlciBpbmplY3Rpb24uCgotICoqQXV0b21hdGVkIFVwc3RyZWFtIFN5bmMqKjogQ0kvQ0QgcGlwZWxpbmVzIGF1dG9tYXRpY2FsbHkgZmV0Y2gsIHBhcnNlLCBhbmQgY29tbWl0IGRvd25zdHJlYW0gY2hhbmdlcyBmcm9tIHRoZSBuZXRib290Lnh5eiBvcGVyYXRpbmcgc3lzdGVtIHJlZ2lzdHJpZXMuCgotICoqa2V4ZWMgRXhlY3V0aW9uIEhhbmRvZmYqKjogRG93bmxvYWRzIHJlbW90ZSBrZXJuZWxzIGFuZCBpbml0aWFsIHJhbWRpc2tzIGRpcmVjdGx5IGludG8gbWVtb3J5IGFuZCBwaXZvdHMgQ1VJIGV4ZWN1dGlvbiB3aXRob3V0IHJlYm9vdGluZy4KCi0tLQoKIyMgQXJjaGl0ZWN0dXJlCgpUaGUgZGVwbG95bWVudCBhcnRpZmFjdCBpcyBhIHNpbmdsZSBtaW5pbWFsIExpbnV4IGAuaXNvYCBvciBgLmltZ2AgZGVzaWduZWQgdG8gYmUgZmxhc2hlZCB0byBsb2NhbCBtZWRpYSAoVVNCL0Rpc2spLiBVcG9uIGJvb3QsIHRoZSBlbnZpcm9ubWVudCBpbml0aWFsaXplcyB0aGUgbmV0d29yayBoYXJkd2FyZSwgZmV0Y2hlcyB0aGUgcmVxdWlyZWQgbmV0Ym9vdCBjb25maWd1cmF0aW9ucyBvdmVyIEhUVFAvSFRUUFMsIGFuZCBoYW5kcyBvZmYgc3lzdGVtIGV4ZWN1dGlvbiB0byB0aGUgc2VsZWN0ZWQgcGF5bG9hZC4KCi0tLQoKIyMgUHJvamVjdCBTdHJ1Y3R1cmUKCmBgYHRleHQKLgrilJzilIDilIAgLmdpdGh1Yi93b3JrZmxvd3MvICAgICAgICAgICMgQ0kvQ0QgcGlwZWxpbmVzIChJU08gYnVpbGRzLCBVcHN0cmVhbSBzeW5jKQrilJzilIDilIAgYnVpbGRyb290LWV4dGVybmFsLyAgICAgICAgICMgQ3VzdG9tIEJ1aWxkcm9vdCB0cmVlIGZvciB0aGUgYm9vdGxvYWRlciBPUwrilIIgICDilJzilIDilIAgYm9hcmQva2V4ZWNib290LyAgICAgICAgIyBCb2FyZC1zcGVjaWZpYyBjb25maWd1cmF0aW9ucwrilIIgICDilIIgICDilJzilIDilIAgbGludXguY29uZmlnICAgICAgICAjIE1pbmltYWwgTGludXgga2VybmVsIGNvbmZpZyB3aXRoIGtleGVjIGVuYWJsZWQKailIIICDilIIgICDilJTilIDilIAgcm9vdGZzLW92ZXJsYXkvICAgICAjIEN1c3RvbSBvdmVybGF5IChlLmcuLCBpbml0IHNjcmlwdHMgc3RhcnRpbmcgdGhlIFRVSSkK4pSCICAg4pSc4pSA4pSAIGNvbmZpZ3MvICAgICAgICAgICAgICAgIyBCdWlsZHJvb3QgZGVmY29uZmlncyAoZS5nLiwga2V4ZWNib290X2RlZmNvbmZpZykK4pSCICAg4pSU4pSA4pSAIHBhY2thZ2Uva2V4ZWNib290LXR1aS8gICMgQ3VzdG9tIHBhY2thZ2UgZGVmaW5pdGlvbiB0byBjb21waWxlIGFuZCBpbnN0YWxsIG91ciBHbyBUVUkK4pSc4pSA4pSAIHR1aS8gICAgICAgICAgICAgICAgICAgICAgICAgIyBUaGUgR28tYmFzZWQgVGVybWluYWwgVXNlciBJbnRlcmZhY2UgKFRVSSkgc291cmNlIGNvZGUK4pSCICAg4pSc4pSA4pSAIGNtZC9rZXhlY2Jvb3QvICAgICAgICAgICMgQXBwbGljYXRpb24gZW50cnlwb2ludArilIIgICDilJTilIDilIAgaW50ZXJuYWwvCuKUgiAgICAgICDilJzilIDilIAgbWVudS8gICAgICAgICAgICAgICAjIEJ1YmJsZXRlYSBUVUkgbG9naWMgKG1haW4gbWVudSwgcHJvbXB0cykK4pSCICAgICAgIOKUnOKUgOKUgCBuZXR3b3JrLyAgICAgICAgICAgICAgIyBpd2QgV2ktRmkgYXV0aGVudGljYXRpb24gaW50ZWdyYXRpb24K4pSCICAgICAgIOKUlOKUgOKUgCBwYXlsb2FkLyAgICAgICAgICAgICAjIG5ldGJvb3QueHl6IGVuZHBvaW50IHBhcnNpbmcgYW5kIGtleGVjIGV4ZWN1dGlvbgrilJTilIDilIAgUkVBRE1FLm1kICAgICAgICAgICAgICAgICAgICAgIyBQcm9qZWN0IGRvY3VtZW50YXRpb24KYGBgCgotLS0KCiMjIFZlcnNpb25pbmcKClRoaXMgcHJvamVjdCBmb2xsb3dzIGEgcHJhZ21hdGljIFNlbVZlciBzdHJhdGVneToKCnwgVmVyc2lvbiBQYXR0ZXJuIHwgTWVhbmluZyB8CnwtLS0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tLS18CnwgYHYwLjEuMGAgfCBJbml0aWFsIGRldmVsb3BtZW50IHN0YXJ0IHwKfCBgdjAuMS54YCB8IEluY3JlbWVudGFsIGNvbW1pdHMgLyBidWcgZml4ZXMgfAp8IGAwLnguMGAgfCBNYWpvciBmZWF0dXJlIGltcGxlbWVudGF0aW9uIHwKfCBgdjEuMC4wYCB8IEZpcnN0IGZ1bGwgc3RhYmxlIHJlbGVhc2UgfAoKPiAqKk5vdGU6KiogQWxsIHByZS0xLjAuMCByZWxlYXNlcyBhcmUgY29uc2lkZXJlZCBkZXZlbG9wbWVudCBzbmFwc2hvdHMgYW5kIG1heSBjb250YWluIGluY29tcGxldGUgZmVhdHVyZXMgb3IgYnJlYWtpbmcgY2hhbmdlcy4KCi0tLQoKIyMgQ0kgUGlwZWxpbmUKClRoZSBDSSBwaXBlbGluZSBydW5zIG9uIHRoZSBSUERldnMgc2VsZi1ob3N0ZWQgcnVubmVyIGZsZWV0IHdpdGggYSAyLXN0YWdlIGdhdGVkIGJ1aWxkOgoKYGBgCmJ1aWxkLXR1aSAoM3ggbWF0cml4OiBsaW51eDY0L2hlYXZ5LCBtYWNPUy9saWdodHdlaWdodCwgd2luZG93cy9saWdodHdlaWdodCkKICAgIOS4rSBidWlsZC1pc28gKGxpbnV4NjQvaGVhdnksIG5lZWRzOiBidWlsZC10dWkpCmBgYAoKLSAqKlRVSSBidWlsZHMqKiBjcm9zcy1jb21waWxlIG5hdGl2ZWx5IG9uIGFsbCAzIHBsYXRmb3JtcyB2aWEgYGdvIGJ1aWxkYAotICoqSVNPIGJ1aWxkKiogcnVucyBvbiBMaW51eCBoZWF2eSBydW5uZXIgdXNpbmcgQnVpbGRyb290IDIwMjMuMTEuMQotIEFydGlmYWN0cyBpbmNsdWRlIFRVSSBiaW5hcmllcyBwZXItcGxhdGZvcm0gYW5kIGJvb3RhYmxlIGltYWdlcwo=
+# kexecboot.xyz
+
+![CI](https://github.com/RPDevs-Builds/kexecboot.xyz/actions/workflows/ci.yml/badge.svg)](https://github.com/RPDevs-Builds/kexecboot.xyz/actions/workflows/ci.yml)
+![Version](https://img.shields.io/github/v/tag/RPDevs-Builds/kexecboot.xyz?label=version)
+
+A Wi-Fi capable network bootloader utilizing a minimal Linux kexec environment and Go TUI, synchronized with netboot.xyz endpoints.
+
+kexecboot.xyz is a bare-metal network bootloader designed to bypass the hardware limitations of traditional iPXE environments. By utilizing a minimal Buildroot Linux initramfs and a statically compiled Go terminal user interface (TUI), kexecboot.xyz enables pre-OS Wi-Fi authentication (WPA2/WPA3) and payload retrieval over modern wireless networks.
+
+The project automatically synchronizes with the upstream endpoints.yml from netboot.xyz, dynamically parsing OS kernel paths and parameters to execute a direct kexec pivot into the target operating system.
+
+---
+
+## Core Capabilities
+
+- **Native Wireless Booting**: Authenticates to WPA2/WPA3 networks using iwd and modern Linux drivers, bypassing UEFI SNP network constraints.
+
+- **Go-Driven Menu System**: Replaces legacy iPXE scripts with a statically compiled Go TUI for dynamic OS selection and parameter injection.
+
+- **Automated Upstream Sync**: CI/CD pipelines automatically fetch, parse, and commit downstream changes from the netboot.xyz operating system registries.
+
+- **kexec Execution Handoff**: Downloads remote kernels and initial ramdisks directly into memory and pivots CPU execution without rebooting.
+
+---
+
+## Architecture
+
+The deployment artifact is a single minimal Linux `.iso` or `.img` designed to be flashed to local media (USB/Disk). Upon boot, the environment initializes the network hardware, fetches the required netboot configurations over HTTP/HTTPS, and hands off system execution to the selected payload.
+
+---
+
+## Project Structure
+
+```text
+.
+├── .github/workflows/          # CI/CD pipelines (ISO builds, Upstream sync)
+├── buildroot-external/         # Custom Buildroot tree for the bootloader OS
+│   ├── board/kexecboot/        # Board-specific configurations
+│   │   ├── linux.config        # Minimal Linux kernel config with kexec enabled
+│   │   └── rootfs-overlay/     # Custom overlay (e.g., init scripts starting the TUI)
+│   ├── configs/                # Buildroot defconfigs (e.g., kexecboot_defconfig)
+│   └── package/kexecboot-tui/  # Custom package definition to compile and install our Go TUI
+├── tui/                        # The Go-based Terminal User Interface (TUI) source code
+│   ├── cmd/kexecboot/          # Application entrypoint
+│   └── internal/
+│       ├── menu/               # Bubbletea TUI logic (main menu, prompts)
+│       ├── network/            # iwd Wi-Fi authentication integration
+│       └── payload/            # netboot.xyz endpoint parsing and kexec execution
+└── README.md                   # Project documentation
+```
+
+---
+
+## Versioning
+
+This project follows a pragmatic SemVer strategy:
+
+| Version Pattern | Meaning |
+|-----------------|---------|
+| `v0.1.0` | Initial development start |
+| `v0.1.x` | Incremental commits / bug fixes |
+| `v0.x.0` | Major feature implementation |
+| `v1.0.0` | First full stable release |
+
+> **Note:** All pre-1.0.0 releases are considered development snapshots and may contain incomplete features or breaking changes.
+
+---
+
+## CI Pipeline
+
+The CI pipeline runs on the RPDevs self-hosted runner fleet with a 2-stage gated build:
+
+```
+build-tui (3x matrix: linux64/heavy, macOS/lightweight, windows/lightweight)
+    └── build-iso (linux64/heavy, needs: build-tui)
+```
+
+- **TUI builds** cross-compile natively on all 3 platforms via `go build`
+- **ISO build** runs on Linux heavy runner using Buildroot 2023.11.1
+- Artifacts include TUI binaries per-platform and bootable images
