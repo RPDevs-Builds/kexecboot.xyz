@@ -37,5 +37,5 @@ BR2_TARGET_ROOTFS_EXT2_4=y
 BR2_TARGET_GRUB2=y
 BR2_TARGET_GRUB2_X86_64_EFI=y
 BR2_TARGET_GRUB2_BOOT_PARTITION="ext2"
-BR2_TARGET_GRUB2_BUILTIN_MODULES="boot linux ext2 fat squashfs part_msdos part_gpt normal efi_gop"
+BR2_TARGET_GRUB2_BUILTIN_MODULES_EFI="boot linux ext2 fat squashfs part_msdos part_gpt normal efi_gop"
 BR2_ROOTFS_OVERLAY="$(BR2_EXTERNAL_KEXECBOOT_PATH)/board/kexecboot/rootfs-overlay"
