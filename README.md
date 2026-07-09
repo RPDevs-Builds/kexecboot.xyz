@@ -17,3 +17,23 @@ Core Capabilities
 
 Architecture
 The deployment artifact is a single minimal Linux .iso or .img designed to be flashed to local media (USB/Disk). Upon boot, the environment initializes the network hardware, fetches the required netboot configurations over HTTP/HTTPS, and hands off system execution to the selected payload.
+
+## Project Structure
+
+```text
+.
+├── .github/workflows/          # CI/CD pipelines (ISO builds, Upstream sync)
+├── buildroot-external/         # Custom Buildroot tree for the bootloader OS
+│   ├── board/kexecboot/        # Board-specific configurations
+│   │   ├── linux.config        # Minimal Linux kernel config with kexec enabled
+│   │   └── rootfs-overlay/     # Custom overlay (e.g., init scripts starting the TUI)
+│   ├── configs/                # Buildroot defconfigs (e.g., kexecboot_defconfig)
+│   └── package/kexecboot-tui/  # Custom package definition to compile and install our Go TUI
+├── tui/                        # The Go-based Terminal User Interface (TUI) source code
+│   ├── cmd/kexecboot/          # Application entrypoint
+│   └── internal/               
+│       ├── menu/               # Bubbletea TUI logic (main menu, prompts)
+│       ├── network/            # iwd Wi-Fi authentication integration
+│       └── payload/            # netboot.xyz endpoint parsing and kexec execution
+└── README.md                   # Project documentation
+```
