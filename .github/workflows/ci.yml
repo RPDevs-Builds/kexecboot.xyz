@@ -49,6 +49,9 @@ jobs:
 
       - name: Build TUI
         shell: bash
+        env:
+          GOOS: ${{ matrix.os }}
+          GOARCH: amd64
         run: |
           cd tui
           go build -o kexecboot-tui-${{ matrix.os }}${{ matrix.ext }} ./cmd/kexecboot
