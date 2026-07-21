@@ -48,25 +48,31 @@ func Scan() ([]string, error) {
 		return nil, fmt.Errorf("failed to get networks: %w", err)
 	}
 
+	ssids := ParseNetworksOutput(string(out))
+	if len(ssids) == 0 {
+		return nil, fmt.Errorf("no networks found")
+	}
+
+	return ssids, nil
+}
+
+// ParseNetworksOutput parses iwctl station get-networks text output
+func ParseNetworksOutput(out string) []string {
 	var ssids []string
-	lines := strings.Split(string(out), "\n")
+	lines := strings.Split(out, "\n")
 	
 	for _, line := range lines {
-		// Clean up escape characters if any, and trim spaces
 		line = strings.TrimSpace(line)
-		// Strip ANSI escape codes
 		ansiRegex := regexp.MustCompile(`\x1b\[[0-9;]*[mK]`)
 		line = ansiRegex.ReplaceAllString(line, "")
 		
-		if line == "" || strings.HasPrefix(line, "-") || strings.Contains(line, "Network name") || strings.Contains(line, "Available networks") {
+		if line == "" || strings.HasPrefix(line, "-") || strings.Contains(line, "Network name") || strings.Contains(line, "Available networks") || strings.Contains(line, "scanning") {
 			continue
 		}
 		
-		// strip leading '>' if currently connected
 		line = strings.TrimPrefix(line, ">")
 		line = strings.TrimSpace(line)
 		
-		// Extract SSID using a 2+ spaces delimiter
 		parts := regexp.MustCompile(`\s{2,}`).Split(line, -1)
 		var ssid string
 		if len(parts) > 0 {
@@ -74,7 +80,6 @@ func Scan() ([]string, error) {
 		}
 
 		if ssid != "" {
-			// Avoid duplicates
 			found := false
 			for _, s := range ssids {
 				if s == ssid {
@@ -87,12 +92,7 @@ func Scan() ([]string, error) {
 			}
 		}
 	}
-
-	if len(ssids) == 0 {
-		return nil, fmt.Errorf("no networks found")
-	}
-
-	return ssids, nil
+	return ssids
 }
 
 // Connect attempts to connect to a network with the given PSK

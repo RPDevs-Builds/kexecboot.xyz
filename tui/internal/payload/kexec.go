@@ -75,7 +75,7 @@ func FetchEndpoints(url string) ([]Endpoint, error) {
 		for _, f := range raw.Files {
 			if strings.Contains(f, "vmlinuz") || strings.Contains(f, "bzImage") {
 				vmlinuzName = f
-			} else if strings.Contains(f, "initrd") {
+			} else if strings.Contains(f, "initrd") || strings.Contains(f, "initramfs") {
 				initrdName = f
 			}
 		}
