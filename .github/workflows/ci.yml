@@ -81,7 +81,7 @@ jobs:
 
       - name: Download Buildroot
         run: |
-          wget https://buildroot.org/downloads/buildroot-2023.11.1.tar.gz
+          curl -LO https://buildroot.org/downloads/buildroot-2023.11.1.tar.gz
           tar -xf buildroot-2023.11.1.tar.gz
           mv buildroot-2023.11.1 buildroot
 
